@@ -1,0 +1,199 @@
+{
+    "Results": {
+        "categorical_accuracy": 0.9099790453910828,
+        "loss": 0.29471084475517273,
+        "val_loss": 0.2880411744117737,
+        "TEST_ACC": 0.9063275434243176
+    },
+    "Hyperparameters": {
+        "n_epochs": 1000,
+        "learning_rate": 0.001,
+        "batch_size": 1024,
+        "n_neurons_per_hlayer": [
+            50,
+            25,
+            50
+        ],
+        "optimizer": "<keras.optimizers.optimizer_v2.rmsprop.RMSprop object at 0x7fc29493b910>",
+        "model": {
+            "class_name": "Sequential",
+            "config": {
+                "name": "Feedforward_NN",
+                "layers": [
+                    {
+                        "class_name": "InputLayer",
+                        "config": {
+                            "batch_input_shape": [
+                                null,
+                                29
+                            ],
+                            "dtype": "float32",
+                            "sparse": false,
+                            "ragged": false,
+                            "name": "input_7"
+                        }
+                    },
+                    {
+                        "class_name": "Dense",
+                        "config": {
+                            "name": "dense_27",
+                            "trainable": true,
+                            "dtype": "float32",
+                            "units": 50,
+                            "activation": "relu",
+                            "use_bias": true,
+                            "kernel_initializer": {
+                                "class_name": "GlorotUniform",
+                                "config": {
+                                    "seed": null
+                                }
+                            },
+                            "bias_initializer": {
+                                "class_name": "Zeros",
+                                "config": {}
+                            },
+                            "kernel_regularizer": {
+                                "class_name": "L2",
+                                "config": {
+                                    "l2": 0.0010000000474974513
+                                }
+                            },
+                            "bias_regularizer": null,
+                            "activity_regularizer": null,
+                            "kernel_constraint": null,
+                            "bias_constraint": null
+                        }
+                    },
+                    {
+                        "class_name": "Dropout",
+                        "config": {
+                            "name": "dropout_21",
+                            "trainable": true,
+                            "dtype": "float32",
+                            "rate": 0.1,
+                            "noise_shape": null,
+                            "seed": null
+                        }
+                    },
+                    {
+                        "class_name": "Dense",
+                        "config": {
+                            "name": "dense_28",
+                            "trainable": true,
+                            "dtype": "float32",
+                            "units": 25,
+                            "activation": "relu",
+                            "use_bias": true,
+                            "kernel_initializer": {
+                                "class_name": "GlorotUniform",
+                                "config": {
+                                    "seed": null
+                                }
+                            },
+                            "bias_initializer": {
+                                "class_name": "Zeros",
+                                "config": {}
+                            },
+                            "kernel_regularizer": {
+                                "class_name": "L2",
+                                "config": {
+                                    "l2": 0.0010000000474974513
+                                }
+                            },
+                            "bias_regularizer": null,
+                            "activity_regularizer": null,
+                            "kernel_constraint": null,
+                            "bias_constraint": null
+                        }
+                    },
+                    {
+                        "class_name": "Dropout",
+                        "config": {
+                            "name": "dropout_22",
+                            "trainable": true,
+                            "dtype": "float32",
+                            "rate": 0.1,
+                            "noise_shape": null,
+                            "seed": null
+                        }
+                    },
+                    {
+                        "class_name": "Dense",
+                        "config": {
+                            "name": "dense_29",
+                            "trainable": true,
+                            "dtype": "float32",
+                            "units": 50,
+                            "activation": "relu",
+                            "use_bias": true,
+                            "kernel_initializer": {
+                                "class_name": "GlorotUniform",
+                                "config": {
+                                    "seed": null
+                                }
+                            },
+                            "bias_initializer": {
+                                "class_name": "Zeros",
+                                "config": {}
+                            },
+                            "kernel_regularizer": {
+                                "class_name": "L2",
+                                "config": {
+                                    "l2": 0.0010000000474974513
+                                }
+                            },
+                            "bias_regularizer": null,
+                            "activity_regularizer": null,
+                            "kernel_constraint": null,
+                            "bias_constraint": null
+                        }
+                    },
+                    {
+                        "class_name": "Dropout",
+                        "config": {
+                            "name": "dropout_23",
+                            "trainable": true,
+                            "dtype": "float32",
+                            "rate": 0.1,
+                            "noise_shape": null,
+                            "seed": null
+                        }
+                    },
+                    {
+                        "class_name": "Dense",
+                        "config": {
+                            "name": "dense_30",
+                            "trainable": true,
+                            "dtype": "float32",
+                            "units": 4,
+                            "activation": "softmax",
+                            "use_bias": true,
+                            "kernel_initializer": {
+                                "class_name": "GlorotUniform",
+                                "config": {
+                                    "seed": null
+                                }
+                            },
+                            "bias_initializer": {
+                                "class_name": "Zeros",
+                                "config": {}
+                            },
+                            "kernel_regularizer": {
+                                "class_name": "L2",
+                                "config": {
+                                    "l2": 0.0010000000474974513
+                                }
+                            },
+                            "bias_regularizer": null,
+                            "activity_regularizer": null,
+                            "kernel_constraint": null,
+                            "bias_constraint": null
+                        }
+                    }
+                ]
+            },
+            "keras_version": "2.9.0",
+            "backend": "tensorflow"
+        }
+    }
+}
